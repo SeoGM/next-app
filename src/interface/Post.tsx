@@ -4,5 +4,6 @@ export default interface Post {
   title: string;
   image: string;
   body: string;
+  tags: string[];
   createdAt: string;
 }

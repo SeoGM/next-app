@@ -1,6 +1,6 @@
-import Head from "next/head";
 import Container from "@/components/layout/Container";
 import Post from "@/interface/Post";
+import RecentPosts from "@/components/recentPosts/RecentPosts";
 
 interface HomeProps {
   posts: Post[];
@@ -8,27 +8,16 @@ interface HomeProps {
 
 export default function Home({ posts }: HomeProps) {
   return (
-    <>
-      <Head>
-        <title>BLINGLOG</title>
-        <meta name="description" content="BLINGLOG" />
-      </Head>
-      <section>
-        <Container>
-          <div className="space-y-5 pt-6 pb-8 md:space-y-2">
-            <h1 className="text-6xl leading-14 font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl leading-9">
-              Latest
-            </h1>
-            <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-              A blog created with Next.js and Tailwind.css
-            </p>
-          </div>
-          {posts.map((post: Post) => (
-            <div>{post.id}</div>
-          ))}
-        </Container>
-      </section>
-    </>
+    <Container>
+      <div className="divide-y divide-gray-200">
+        <div className="space-y-5 pt-6 pb-8 md:space-y-2">
+          <h2 className="text-5xl leading-14 font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-9">
+            최근 게시물
+          </h2>
+        </div>
+        <RecentPosts posts={posts} />
+      </div>
+    </Container>
   );
 }
 
