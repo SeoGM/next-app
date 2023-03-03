@@ -1,4 +1,5 @@
-import Post from "@/interface/Post";
+import Link from "next/link";
+import { Post } from "@/interface/Post";
 import formatDate from "@/util/formatDate";
 
 interface ListProps {
@@ -11,9 +12,9 @@ export default function RecentPosts({ posts }: ListProps) {
   return (
     <ul className="divide-y divide-gray-200">
       {posts.slice(0, MAX_DISPLAY).map((post: Post) => {
-        const { createdAt, title, tags } = post;
+        const { id, title, createdAt, tags } = post;
         return (
-          <li className="py-12">
+          <li key={id} className="py-12">
             <article className="flex">
               <dl className="flex-1">
                 <dt className="sr-only">Published on</dt>
@@ -23,11 +24,14 @@ export default function RecentPosts({ posts }: ListProps) {
               </dl>
               <div className="flex-[3_3_0%]">
                 <h3 className="text-2xl font-bold leading-8 tracking-tight">
-                  {title}
+                  <Link href={`/blog/${id}`}>{title}</Link>
                 </h3>
                 <div className="flex flex-wrap">
-                  {tags.map((tag: string) => (
-                    <span className="mr-3 text-sm font-medium uppercase text-gray-500">
+                  {tags.map((tag: string, index: number) => (
+                    <span
+                      key={index}
+                      className="mr-3 text-sm font-medium uppercase text-gray-500"
+                    >
                       {tag.split(" ").join("-")}
                     </span>
                   ))}

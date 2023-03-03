@@ -1,5 +1,5 @@
 import Container from "@/components/layout/Container";
-import Post from "@/interface/Post";
+import { Post } from "@/interface/Post";
 import RecentPosts from "@/components/recentPosts/RecentPosts";
 
 interface HomeProps {

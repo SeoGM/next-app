@@ -2,6 +2,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { MoonIcon } from "@heroicons/react/solid";
+import { metadata } from "@/data/metadata";
 
 export default function Nav() {
   const [Toggle, showMenu] = useState<boolean>(false);
@@ -21,7 +22,7 @@ export default function Nav() {
       >
         <div className="hidden sm:flex justify-between items-center w-full h-28 px-4">
           <Link href="/" className="text-2xl font-bold">
-            BLINGBLING
+            {metadata.title}
           </Link>
           <button type="button" onClick={() => showMenu(!Toggle)}>
             <XIcon className="w-8 h-8" />

@@ -1,5 +1,5 @@
 import Container from "@/components/layout/Container";
-import Post from "@/interface/Post";
+import { Post } from "@/interface/Post";
 import BlogPosts from "@/components/blogPosts/BlogPosts";
 
 interface BlogProps {
@@ -9,8 +9,7 @@ interface BlogProps {
 export default function Blog({ posts }: BlogProps) {
   return (
     <Container>
-        
-        <BlogPosts posts={posts} />
+      <BlogPosts posts={posts} />
     </Container>
   );
 }
