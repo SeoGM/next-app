@@ -1,9 +1,9 @@
-export default function formatDate(date: string) {
-  const now = new Date(date).toLocaleDateString("ko-KR", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
+import { useState, useEffect } from "react";
 
-  return now;
+export default function formatDate(date: string) {
+  const [formattedDate, setFormattedDate] = useState<string | null>(null);
+
+  useEffect(() => setFormattedDate(new Date(date).toLocaleDateString("ko-KR")));
+
+  return formattedDate;
 }
