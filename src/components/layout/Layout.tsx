@@ -1,3 +1,4 @@
+import { metadata } from "@/data/metadata";
 import Head from "next/head";
 import { PropsWithChildren } from "react";
 import Footer from "./Footer";
@@ -7,7 +8,7 @@ export default function Layout(props: PropsWithChildren) {
   return (
     <>
       <Head>
-        <title>BLINGLOG</title>
+        <title>{metadata.title}</title>
         <meta name="description" content="BLINGLOG" />
       </Head>
       <Header />

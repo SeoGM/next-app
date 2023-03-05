@@ -8,8 +8,13 @@ export default function Nav() {
   const [Toggle, showMenu] = useState<boolean>(false);
 
   const navLinks: { href: string; title: string }[] = [
+    { href: "#home", title: "Home" },
+    { href: "#about", title: "About" },
+    { href: "#skills", title: "Skills" },
+    { href: "#utilizes", title: "Utilizes" },
+    { href: "#projects", title: "Projects" },
+    { href: "#contact", title: "Contact" },
     { href: "/blog", title: "Blog" },
-    { href: "/about", title: "About" },
   ];
   return (
     <div className="flex justify-between items-center gap-4">
@@ -28,12 +33,12 @@ export default function Nav() {
             <XIcon className="w-8 h-8" />
           </button>
         </div>
-        <nav className="flex sm:flex-col justify-between items-center gap-4">
+        <nav className="flex sm:flex-col justify-between items-center gap-8">
           {navLinks.map((link) => (
             <Link
               key={link.title}
               href={link.href}
-              className="sm:text-2xl sm:font-bold"
+              className="text-sm font-medium"
             >
               {link.title}
             </Link>
