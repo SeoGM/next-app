@@ -8,9 +8,14 @@ interface ListProps {
 
 const MAX_DISPLAY: number = 5;
 
-export default function RecentPosts({ posts }: ListProps) {
+export default function BlogSection({ posts }: ListProps) {
   return (
     <>
+      <div className="space-y-5 pt-6 pb-8 md:space-y-2 border-b border-gray200">
+        <h2 className="text-5xl leading-14 font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-9">
+          최근 게시물
+        </h2>
+      </div>
       <ul className="divide-y divide-gray-200">
         {posts.slice(0, MAX_DISPLAY).map((post: Post) => {
           const { id, title, createdAt, tags } = post;

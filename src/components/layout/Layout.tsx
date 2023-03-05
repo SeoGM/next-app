@@ -12,7 +12,7 @@ export default function Layout(props: PropsWithChildren) {
         <meta name="description" content="BLINGLOG" />
       </Head>
       <Header />
-      <main className="pt-28">{props.children}</main>
+      <main>{props.children}</main>
       <Footer />
     </>
   );

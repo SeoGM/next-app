@@ -5,7 +5,7 @@ import { metadata } from "@/data/metadata";
 import Nav from "./Nav";
 
 export default function Header() {
-  const [scroll, setScroll] = useState(false);
+  const [scroll, setScroll] = useState<boolean>(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
