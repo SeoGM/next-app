@@ -7,10 +7,10 @@ export default function HomeSection() {
   return (
     <Section id="home">
       <Container>
-        <div className="grid grid-cols-2 items-center gap-5 pt-24 pb-28">
-          <div>
+        <div className="grid grid-cols-2 items-center gap-5 pt-24 pb-28 md:grid-cols-1 md:pt-14 md:pb-16">
+          <div className="md:px-20 sm:px-8">
             <h1 className="text-2xl font-semibold">{metadata.author}</h1>
-            <h2 className="home__subtitle mb-4 text-xl font-normal">
+            <h2 className="home__subtitle mb-4 text-base font-normal">
               Front-end Developer
             </h2>
             <p className="max-w-[400px] mb-12">
@@ -20,7 +20,7 @@ export default function HomeSection() {
               하는 걸 좋아하는 서광명입니다.
             </p>
           </div>
-          <div className="home__img"></div>
+          <div className="home__img md:order-first"></div>
         </div>
         <div className="flex justify-center">
           <a href="#about" className="inline-flex items-center">
