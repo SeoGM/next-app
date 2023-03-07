@@ -28,7 +28,7 @@
   }
 
   .body-color {
-    color: var(--body-color);
+    background-color: var(--body-color);
   }
 
   .home__subtitle {

@@ -9,8 +9,10 @@ export default function HomeSection() {
       <Container>
         <div className="grid grid-cols-2 items-center gap-5 pt-24 pb-28 md:grid-cols-1 md:pt-14 md:pb-16">
           <div className="md:px-20 sm:px-8">
-            <h1 className="text-2xl font-semibold">{metadata.author}</h1>
-            <h2 className="home__subtitle mb-4 text-base font-normal">
+            <h1 className="text-2xl font-semibold title-color">
+              {metadata.author}
+            </h1>
+            <h2 className="home__subtitle mb-4 text-base font-normal title-color">
               Front-end Developer
             </h2>
             <p className="max-w-[400px] mb-12">
@@ -25,8 +27,10 @@ export default function HomeSection() {
         <div className="flex justify-center">
           <a href="#about" className="inline-flex items-center">
             <span className="home__scroll-wheel"></span>
-            <span className="text-lg font-medium ml-2 mr-1">Scroll Down</span>
-            <ArrowDownIcon className="w-4 h-4" />
+            <span className="text-lg font-medium ml-2 mr-1 title-color">
+              Scroll Down
+            </span>
+            <ArrowDownIcon className="w-4 h-4 title-color" />
           </a>
         </div>
       </Container>

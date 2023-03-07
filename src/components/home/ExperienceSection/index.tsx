@@ -17,7 +17,9 @@ export default function ExperienceSection() {
                 {index % 2 == 0 ? (
                   <>
                     <div className="grid">
-                      <h3 className="text-base font-medium">{name}</h3>
+                      <h3 className="text-base font-medium title-color">
+                        {name}
+                      </h3>
                       <span className="inline-block text-sm mb-4">
                         {position} / {rank}
                       </span>
@@ -27,19 +29,21 @@ export default function ExperienceSection() {
                     </div>
 
                     <div>
-                      <span className="inline-block w-4 h-4 mt-[3px] bg-gray-500 rounded-full"></span>
-                      <span className="block w-[1px] h-full bg-gray-500 translate-x-[7px] translate-y-[-7px] group-last/item:hidden"></span>
+                      <span className="inline-block w-4 h-4 mt-[3px] bg-gray-400 rounded-full"></span>
+                      <span className="block w-[1px] h-full bg-gray-400 translate-x-[7px] translate-y-[-7px] group-last/item:hidden"></span>
                     </div>
                   </>
                 ) : (
                   <>
                     <div></div>
                     <div>
-                      <span className="inline-block w-4 h-4 mt-[3px] bg-gray-500 rounded-full"></span>
-                      <span className="block w-[1px] h-full bg-gray-500 translate-x-[7px] translate-y-[-7px] group-last/item:hidden"></span>
+                      <span className="inline-block w-4 h-4 mt-[3px] bg-gray-400 rounded-full"></span>
+                      <span className="block w-[1px] h-full bg-gray-400 translate-x-[7px] translate-y-[-7px] group-last/item:hidden"></span>
                     </div>
                     <div>
-                      <h3 className="text-base font-medium">{name}</h3>
+                      <h3 className="text-base font-medium title-color">
+                        {name}
+                      </h3>
                       <span className="inline-block text-sm mb-4">
                         {position} / {rank}
                       </span>

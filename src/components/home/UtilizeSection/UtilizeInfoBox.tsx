@@ -22,15 +22,15 @@ export default function UtilizeInfoBox({ utilize }: props) {
   const [toggleState, setToggleState] = useState<number>(0);
 
   return (
-    <div className="border border-black/[0.1] pt-24 pb-8 pl-10 md:pt-14 md:pb-5 md:pl-6 md:pr-2 sm:pr-24">
-      <Icon className="w-4 h-4" />
+    <div className="bg-white border border-black/[0.1] pt-24 pb-8 pl-10 md:pt-14 md:pb-5 md:pl-6 md:pr-2 sm:pr-24">
+      <Icon className="w-4 h-4 title-color" />
       <h3
-        className="text-base font-medium mb-4"
+        className="text-base font-medium title-color mb-4"
         dangerouslySetInnerHTML={{ __html: title }}
       />
       <button
         type="button"
-        className="group/btn inline-flex items-center gap-x-1 text-sm"
+        className="group/btn inline-flex items-center gap-x-1 text-sm title-color"
         onClick={() => setToggleState(id)}
       >
         View More{" "}
@@ -44,10 +44,12 @@ export default function UtilizeInfoBox({ utilize }: props) {
       >
         <div className="relative w-[500px] pt-20 pb-10 px-10 bg-white rounded-3xl">
           <XIcon
-            className="absolute top-6 right-6 w-6 h-6 cursor-pointer"
+            className="absolute top-6 right-6 w-6 h-6 title-color cursor-pointer"
             onClick={() => setToggleState(0)}
           />
-          <h3 className="text-xl font-medium text-center mb-4">{modalTitle}</h3>
+          <h3 className="text-xl font-medium title-color text-center mb-4">
+            {modalTitle}
+          </h3>
           <ul className="flex flex-col gap-y-3">
             {data.map((utilize) => (
               <li className="flex items-center gap-x-2">

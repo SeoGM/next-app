@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { ViewGridIcon, XIcon } from "@heroicons/react/outline";
 import { MoonIcon } from "@heroicons/react/solid";
 import { metadata } from "@/data/metadata";
 
@@ -18,43 +18,41 @@ export default function Nav() {
   ];
   return (
     <div className="flex justify-between items-center gap-4">
-      <div
-        className={`flex justify-between items-center
-              ${
-                Toggle ? "sm:flex" : "sm:hidden"
-              } sm:flex-col sm:justify-start sm:fixed sm:gap-8 sm:top-0 sm:left-0 sm:w-full sm:h-full sm:transform sm:bg-gray-200 sm:opacity-95 sm:duration-300 sm:ease-in-out
-            `}
+      {/* <button type="button">
+        <MoonIcon className="w-8 h-8 title-color" />
+      </button> */}
+      <button
+        type="button"
+        className="hidden md:block"
+        onClick={() => showMenu(!Toggle)}
       >
-        <div className="hidden sm:flex justify-between items-center w-full h-28 px-4">
-          <Link href="/" className="text-2xl font-bold">
-            {metadata.title}
-          </Link>
-          <button type="button" onClick={() => showMenu(!Toggle)}>
-            <XIcon className="w-8 h-8" />
-          </button>
-        </div>
-        <nav className="flex sm:flex-col justify-between items-center gap-8">
+        <ViewGridIcon className="w-6 h-6 title-color" />
+      </button>
+      <div
+        className={`flex justify-between items-center ${
+          Toggle ? "md:bottom-0" : "md:bottom-[-100%]"
+        } md:body-color md:fixed md:gap-8 md:left-0 md:right-0 md:pt-8 md:pb-16 md:px-6 md:rounded-t-3xl md:shadow-[0_-1px_4px_0_rgba(0_0_0_/_15%)] md:duration-300 md:ease-in-out
+        `}
+      >
+        <button
+          type="button"
+          className="hidden md:block absolute right-6 bottom-2"
+          onClick={() => showMenu(!Toggle)}
+        >
+          <XIcon className="w-8 h-8" />
+        </button>
+        <nav className="flex justify-between items-center gap-8 md:grid md:grid-cols-3 md:w-full">
           {navLinks.map((link) => (
             <a
               key={link.title}
               href={link.href}
-              className="text-sm font-medium"
+              className="text-sm font-medium title-color flex flex-col items-center"
             >
               {link.title}
             </a>
           ))}
         </nav>
       </div>
-      <button type="button">
-        <MoonIcon className="w-8 h-8" />
-      </button>
-      <button
-        type="button"
-        className="hidden sm:block"
-        onClick={() => showMenu(!Toggle)}
-      >
-        <MenuIcon className="w-8 h-8" />
-      </button>
     </div>
   );
 }

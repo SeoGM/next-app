@@ -7,6 +7,9 @@ import {
 export const metadata = {
   title: "illumi.dev",
   author: "GWANGMYEONG SEO",
+  phone: "010.6716.9800",
+  email: "auddlzz000@gmail.com",
+  kakao: "https://open.kakao.com/o/sKUSxaZe",
   github: "https://github.com/SeoGM",
   skills: [
     {

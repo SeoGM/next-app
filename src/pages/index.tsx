@@ -5,6 +5,7 @@ import SkillsSection from "@/components/home/SkillsSection";
 import UtilizeSection from "@/components/home/UtilizeSection";
 import ExperienceSection from "@/components/home/ExperienceSection";
 import ProjectSection from "@/components/home/ProjectSection";
+import ContactSection from "@/components/home/ContactSection";
 
 interface HomeProps {
   posts: Post[];
@@ -19,6 +20,7 @@ export default function Home({ posts }: HomeProps) {
       <UtilizeSection />
       <ExperienceSection />
       <ProjectSection />
+      <ContactSection />
     </>
   );
 }
