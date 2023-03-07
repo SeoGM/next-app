@@ -14,7 +14,7 @@ export default function Nav() {
     { href: "#utilizes", title: "Utilizes" },
     { href: "#projects", title: "Projects" },
     { href: "#contact", title: "Contact" },
-    { href: "/blog", title: "Blog" },
+    // { href: "/blog", title: "Blog" },
   ];
   return (
     <div className="flex justify-between items-center gap-4">
@@ -35,13 +35,13 @@ export default function Nav() {
         </div>
         <nav className="flex sm:flex-col justify-between items-center gap-8">
           {navLinks.map((link) => (
-            <Link
+            <a
               key={link.title}
               href={link.href}
               className="text-sm font-medium"
             >
               {link.title}
-            </Link>
+            </a>
           ))}
         </nav>
       </div>

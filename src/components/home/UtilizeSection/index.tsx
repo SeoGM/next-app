@@ -6,7 +6,7 @@ import UtilizeInfoBox from "./UtilizeInfoBox";
 
 export default function UtilizeSection() {
   return (
-    <Section id="utilize">
+    <Section id="utilizes">
       <Container>
         <SectionTitle title="Utilize" subtitle="How i use skill" />
         <div className="grid grid-cols-3 justify-center gap-x-7 gap-y-6 sm:grid-cols-[max-content]">

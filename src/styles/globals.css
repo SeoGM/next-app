@@ -4,6 +4,33 @@
 @tailwind utilities;
 
 @layer components {
+  :root {
+    /*========== Colors ==========*/
+    /* Color mode HSL(hue, saturation, lightness) */
+    --hue: 0;
+    --sat: 0%;
+    --title-color: hsl(var(--hue), var(--sat), 20%);
+    --title-color-dark: hsl(var(--hue), var(--sat), 0%);
+    --text-color: hsl(var(--hue), var(--sat), 46%);
+    --body-color: hsl(var(--hue), var(--sat), 98%);
+    --container-color: #fff;
+  }
+  .title-color {
+    color: var(--title-color);
+  }
+
+  .title-color-dark {
+    color: var(--title-color-dark);
+  }
+
+  .text-color {
+    color: var(--text-color);
+  }
+
+  .body-color {
+    color: var(--body-color);
+  }
+
   .home__subtitle {
     position: relative;
     padding-left: 5.4rem;
