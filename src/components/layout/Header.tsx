@@ -17,7 +17,7 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-10 flex items-center w-full h-20 body-color ${
         scroll && "shadow-[0_-1px_4px_0_rgba(0_0_0_/_15%)]"
-      } md:top-auto md:bottom-0 md:h-12`}
+      } md:top-auto md:bottom-0 md:h-12 md:shadow-[0_-1px_4px_0_rgba(0_0_0_/_15%)]`}
     >
       <Container>
         <div className="flex justify-between items-center">
