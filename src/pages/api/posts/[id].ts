@@ -10,17 +10,21 @@ interface Post {
   createdAt: string;
 }
 
-export default function hanlder(
+export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Post | { error: string }>
 ) {
-  const postId: number = req.query.id;
+  const postId: number = Number(req.query.id);
   const Posts: Post[] = posts;
 
   if (postId) {
     const post = Posts.find((post) => post.id == postId);
 
-    return res.status(200).json(post);
+    if (post) {
+      return res.status(200).json(post);
+    } else {
+      return res.status(404).json({ error: "Data Not Found" });
+    }
   }
 
   return res.status(404).json({ error: "Data Not Found" });
