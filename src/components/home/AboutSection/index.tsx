@@ -2,6 +2,7 @@ import Image from "next/image";
 import Container from "@/components/layout/Container";
 import Section from "@/components/layout/Section";
 import SectionTitle from "@/components/layout/SectionTitle";
+import AboutImage from "@/assets/about.jpg";
 import AboutInfoBox from "./AboutInfoBox";
 import { UserIcon } from "@heroicons/react/solid";
 import {
@@ -16,9 +17,8 @@ export default function AboutSection() {
         <SectionTitle title="About Me" subtitle="My introduction" />
         <div className="grid grid-cols-2 gap-x-16 lg:grid-cols-1 lg:text-center">
           <Image
-            src=""
+            src={AboutImage}
             width={350}
-            height={600}
             alt=""
             className="rounded-3xl justify-self-center"
           />

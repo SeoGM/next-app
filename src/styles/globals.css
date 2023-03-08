@@ -47,8 +47,7 @@
   }
 
   .home__img {
-    /* background: url(/profile.jpg); */
-    background: #000000;
+    background: url(/profile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
