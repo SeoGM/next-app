@@ -15,7 +15,7 @@ export default function AboutSection() {
     <Section id="about">
       <Container>
         <SectionTitle title="About Me" subtitle="My introduction" />
-        <div className="grid grid-cols-2 gap-x-16 lg:grid-cols-1 lg:text-center">
+        <div className="grid grid-cols-2 gap-x-16 gap-y-10 lg:grid-cols-1 lg:text-center">
           <Image
             src={AboutImage}
             width={350}
