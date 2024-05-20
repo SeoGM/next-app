@@ -89,10 +89,16 @@ export const metadata = {
   ],
   experience: [
     {
+      name: "네오싸이언",
+      position: "Frontend",
+      rank: "프리랜서",
+      date: "2023.04~재직중",
+    },
+    {
       name: "AMI",
       position: "Frontend",
       rank: "프리랜서",
-      date: "2023.01~재직중",
+      date: "2023.01~2023.03",
     },
     {
       name: "OTI",
@@ -115,9 +121,21 @@ export const metadata = {
   ],
   project: [
     {
-      title: "삼성SDS 웰스토리몰 고도화",
-      date: "2023.01 - 진행중",
+      title: "컬리몰 이벤트페이지 운영",
+      date: "2023.04 - 진행중",
       calculator: "",
+      position: "Fontend",
+      skills: ["React", "TypeScript", "JavaScript", "Git", "Photoshop"],
+      description:
+        "마켓컬리 이벤트 개발팀에서 React 컴포넌트를 활용하여 사용자 경험을 향상시키고, 코드 재활용성을 높였습니다.\n" +
+        "타입스크립트를 도입하여 코드베이스를 리팩토링하고 안정성을 향상시켰으며, Fetch함수를 사용하여 백엔드 API와 통합하여 비동기적으로 데이터를 가져왔습니다. \n" +
+        "컴포넌트 랜더링과 데이터 요청 최적화를 통해 빠른 페이지 로딩과 반응성을 유지했습니다. \n" +
+        "Git과 GitHub를 사용하여 이벤트별 브랜치를 나누어 개발하고, 코드 리뷰를 통해 코드 품질을 유지했습니다.",
+    },
+    {
+      title: "삼성SDS 웰스토리몰 고도화",
+      date: "2023.01 - 2023.03",
+      calculator: "2개월",
       position: "Fontend",
       skills: ["React", "Git", "Figma"],
       description:
@@ -131,7 +149,7 @@ export const metadata = {
       date: "2023.01 - 2023.01",
       calculator: "1주일",
       position: "Fontend",
-      skills: ["React", "HTML", "CSS", "JAVASCRIPT"],
+      skills: ["React", "HTML", "CSS", "JavaScript"],
       description:
         "다른 포트폴리오 사이트를 클론 코딩하여 React를 공부하며 만든 사이트입니다. 계속해서 발전하는 신기술을 배우며 제 자신의 가치를 높이기 위한 새로운 도전의 시작점입니다. React의 특징을 살리지 못한 클론 코딩 포트폴리오지만, 기반을 만들어두고 계속해서 업데이트해 나가는 게 목표입니다.",
     },
@@ -156,7 +174,7 @@ export const metadata = {
       date: "2021.05 - 2021.12",
       calculator: "7개월",
       position: "Fontend",
-      skills: ["HTML", "CSS", "JAVASCRIPT", "SVN"],
+      skills: ["HTML", "CSS", "JavaScript", "SVN"],
       description:
         "전자가족관계등록시스템에서 모바일 전자증명서를 발급할 수 있도록 증명서발급 페이지와 온라인 신고 페이지를 반응형페이지로 고도화하였습니다. " +
         "웹 접근성 검사툴(Openwax) 기준 100점을 준수하여 제작하였습니다.",
@@ -166,7 +184,7 @@ export const metadata = {
       date: "2022.01 - 2021.03",
       calculator: "1년 2개월",
       position: "Fontend",
-      skills: ["HTML", "CSS", "JAVASCRIPT", "SVN"],
+      skills: ["HTML", "CSS", "JavaScript", "SVN"],
       description:
         "전자가족관계등록시스템, 가족관계등록시스템, 제적부등록시스템 3개의 서비스를 동시 개발하였습니다. " +
         "전자가족관계등록시스템은 퍼블리싱 100%, 가족관계등록시스템과 제적부등록시스템은 HTML 컴포넌트와 8개의 표준 템플릿을 제작하여 개발자에게 교육하였습니다. " +
@@ -181,7 +199,7 @@ export const metadata = {
         "전자정부프레임워크",
         "HTML",
         "CSS",
-        "JAVASCRIPT",
+        "JavaScript",
         "Oracle",
         "Oracle procedure",
       ],
@@ -197,7 +215,7 @@ export const metadata = {
       skills: [
         "HTML",
         "CSS",
-        "JAVASCRIPT",
+        "JavaScript",
         "그누보드",
         "PHP",
         "My-SQL",

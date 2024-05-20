@@ -27,7 +27,7 @@ export default function AboutSection() {
               <AboutInfoBox
                 icon={IdentificationIcon}
                 title="Experience"
-                desc="5 Years Working"
+                desc="7 Years Working"
               />
               <AboutInfoBox icon={UserIcon} title="Age" desc="33, 1991.10.21" />
               <AboutInfoBox
@@ -37,7 +37,7 @@ export default function AboutSection() {
               />
             </div>
             <p className="text-base mb-10 break-keep lg:px-40 md:mb-8 md:px-16 sm:px-0">
-              저는 5년차 Front-end 개발자입니다.
+              저는 7년차 Front-end 개발자입니다.
               <br />
               <br />
               늘 사용자 입장에서 생각하며 효율적인 UI/UX가 무엇일지 계속
