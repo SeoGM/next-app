@@ -7,10 +7,10 @@ export default function Layout(props: PropsWithChildren) {
   return (
     <>
       <Head>
-        <title>서광명 | 5년차 프론트엔드 개발자 포트폴리오</title>
+        <title>서광명 | 7년차 프론트엔드 개발자 포트폴리오</title>
         <meta
           name="description"
-          content="5년차 프론트엔드 개발자 서광명의 포트폴리오입니다."
+          content="7년차 프론트엔드 개발자 서광명의 포트폴리오입니다."
         />
         <meta
           name="keywords"
